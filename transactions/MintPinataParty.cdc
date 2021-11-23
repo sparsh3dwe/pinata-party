@@ -15,11 +15,13 @@ transaction {
 
   execute {
       let metadata : {String : String} = {
-          "name": "The Big Swing",
-          "swing_velocity": "29", 
-          "swing_angle": "45", 
-          "rating": "5",
-          "uri": "ipfs://QmZEkMkFManmssCHvweFzMhXp8AgbBQR6Hc3cctRXLggap"
+          "name": "iTinker's ABCDE",
+          "A": "Abhay", 
+          "B": "Bani", 
+          "C": "Chinmay",
+          "D":"Dia",
+          "E":"Era",
+          "uri": "ipfs://QmWG4hw3yMRmbQnemKk6GoLrfRe3dohrbmcMsz3z5v7p7g"
       }
       let newNFT <- self.minterRef.mintNFT()
   
