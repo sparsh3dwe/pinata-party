@@ -2,11 +2,12 @@
   "emulators": {
     "default": {
       "port": 3569,
-      "serviceAccount": "sparsh-jain"
+      "serviceAccount": "emulator-account"
     }
   },
   "contracts": {
-    "PinataPartyContract": "./cadence/contracts/PinataPartyContract.cdc"
+    "PinataPartyContract": "./cadence/contracts/PinataPartyContract.cdc",
+    "PinnieToken":"./cadence/contracts/PinnieToken.cdc"
   },
   "networks": {
     "emulator": "127.0.0.1:3569",
@@ -16,7 +17,10 @@
   "accounts": {
     "emulator-account":{
       "address":"f8d6e0586b0a20c7",
-      "key":"9e7d5f0b3a432b274d44814862f298e593aa4695bc7b26a255e045ff0dcf4de2"
+      "key":"9e7d5f0b3a432b274d44814862f298e593aa4695bc7b26a255e045ff0dcf4de2",
+      "chain": "flow-emulator",
+      "sigAlgorithm": "ECDSA_P256",
+      "hashAlgorithm": "SHA3_256"
     },
     "sparsh-jain": {
       "address": "22d57534fc5b7d09",
@@ -24,12 +28,15 @@
       "chain": "flow-emulator",
       "sigAlgorithm": "ECDSA_P256",
       "hashAlgorithm": "SHA3_256"
+   },"second-account":{
+     "address":"01cf0e2f2f715450",
+     "keys":"22888345b6dcd19edab7fee6822c762e1a31d03bb4d62c01f795a2b62e284bf7"
    }
   },
   "deployments": {
     "emulator": {
       "emulator-account": [
-        "PinataPartyContract"
+        "PinataPartyContract","PinnieToken"
       ]
     },
     "testnet": {
