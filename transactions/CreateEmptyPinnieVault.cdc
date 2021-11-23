@@ -14,7 +14,7 @@ transaction {
 	}
 
     post {
-        getAccount(0x01cf0e2f2f715450).getCapability<&PinnieToken.Vault{PinnieToken.Receiver}>(/public/MainReceiver)
+        getAccount(0xf8d6e0586b0a20c7).getCapability<&PinnieToken.Vault{PinnieToken.Receiver}>(/public/MainReceiver)
                         .check():  
                         "Vault Receiver Reference was not created correctly"
     }

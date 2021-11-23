@@ -7,7 +7,8 @@
   },
   "contracts": {
     "PinataPartyContract": "./cadence/contracts/PinataPartyContract.cdc",
-    "PinnieToken":"./cadence/contracts/PinnieToken.cdc"
+    "PinnieToken":"./cadence/contracts/PinnieToken.cdc",
+    "MarketplaceContract":"./cadence/contracts/MarketplaceContract.cdc"
   },
   "networks": {
     "emulator": "127.0.0.1:3569",
@@ -23,8 +24,8 @@
       "hashAlgorithm": "SHA3_256"
     },
     "sparsh-jain": {
-      "address": "22d57534fc5b7d09",
-      "key": "9e7d5f0b3a432b274d44814862f298e593aa4695bc7b26a255e045ff0dcf4de2",
+      "address": "0xfe4fd66a6dff7c51",
+      "key": "53fe6f6d7b7b677ca1a312538a1143abed891e10f81dcbb4e8ca60a55746ee6f",
       "chain": "flow-emulator",
       "sigAlgorithm": "ECDSA_P256",
       "hashAlgorithm": "SHA3_256"
@@ -36,12 +37,12 @@
   "deployments": {
     "emulator": {
       "emulator-account": [
-        "PinataPartyContract","PinnieToken"
+        "PinataPartyContract","PinnieToken","MarketplaceContract"
       ]
     },
     "testnet": {
       "sparsh-jain": [
-        "PinataPartyContract"
+        "PinataPartyContract","PinnieToken","MarketplaceContract"
       ]
     }
   }

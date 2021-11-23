@@ -1,4 +1,4 @@
-import PinataPartyContract from 0xf8d6e0586b0a20c7
+import PinataPartyContract from 0xfe4fd66a6dff7c51
 
 transaction {
   let receiverRef: &{PinataPartyContract.NFTReceiver}
